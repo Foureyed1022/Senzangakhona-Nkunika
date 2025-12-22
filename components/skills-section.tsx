@@ -1,5 +1,15 @@
 export function SkillsSection() {
-  const technical = ["HTML", "CSS", "React.js", "Next.js", "Node.js", "TailwindCSS"]
+  const technical = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "TailwindCSS",
+    "Flutter",
+  ]
   const coreSkills = ["Web Design", "UI/UX", "Problem-Solving", "Front-End Development"]
 
   return (
