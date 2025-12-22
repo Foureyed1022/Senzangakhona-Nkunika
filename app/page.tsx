@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
 import { WorkSection } from "@/components/work-section"
-import { ElevatorPitchSection } from "@/components/elevator-pitch-section"
 import { ContactSection } from "@/components/contact-section"
 import { Header } from "@/components/header"
 import { PortfolioProjectsSection } from "@/components/portfolio-projects-section"
@@ -22,7 +21,6 @@ export default function Home() {
       <SkillsSection />
       <WorkSection />
       <PortfolioProjectsSection />
-      <ElevatorPitchSection />
       <ContactSection />
     </main>
   )
