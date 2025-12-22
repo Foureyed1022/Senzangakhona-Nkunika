@@ -52,7 +52,7 @@ export function ContactSection() {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/Foureyed1022"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-4 p-6 bg-card border border-border rounded-lg hover:border-primary hover:shadow-lg transition-all duration-300 group"

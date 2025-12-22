@@ -2,6 +2,7 @@
 
 import { Mail, Linkedin, Github } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -51,7 +52,7 @@ export function HeroSection() {
               </Link>
             </div>
 
-            {/* ... existing social links ... */}
+            {/* Updated social links */}
             <div className="flex gap-6 pt-8">
               <a
                 href="https://www.linkedin.com/in/senzangakhona"
@@ -63,7 +64,7 @@ export function HeroSection() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Foureyed1022"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,35 +82,19 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* ... existing visual element ... */}
           <div className="relative h-full min-h-96 flex items-center justify-center">
-            <div className="absolute inset-0 grid grid-cols-3 gap-4 opacity-20">
-              {[...Array(9)].map((_, i) => (
-                <div
-                  key={i}
-                  className={`rounded-lg border-2 border-accent ${i % 3 === 1 ? "bg-accent/5" : "bg-primary/5"}`}
-                />
-              ))}
-            </div>
-
-            <div className="relative z-10 space-y-4">
-              <div className="flex gap-2">
-                {[...Array(5)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-3 h-3 rounded-full bg-primary"
-                    style={{
-                      animation: `bounce ${0.8 + i * 0.1}s infinite`,
-                      animationDelay: `${i * 0.1}s`,
-                    }}
+            <div className="relative z-10">
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-2xl" />
+                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
+                  <Image
+                    src="/images/khona.jpeg"
+                    alt="Senzangakhona Nkunika - Software Engineer"
+                    fill
+                    className="object-cover"
+                    priority
                   />
-                ))}
-              </div>
-
-              <div className="text-sm font-mono text-muted-foreground space-y-1">
-                <p>{"> Full-Stack Developer"}</p>
-                <p>{"> UI/UX Designer"}</p>
-                <p>{"> Problem Solver"}</p>
+                </div>
               </div>
             </div>
           </div>
