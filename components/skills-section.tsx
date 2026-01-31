@@ -10,7 +10,7 @@ export function SkillsSection() {
     "TailwindCSS",
     "Flutter",
   ]
-  const coreSkills = ["Web Design", "UI/UX", "Problem-Solving", "Front-End Development"]
+  const coreSkills = ["Web Design and Development", "UI/UX", "Problem-Solving", "Front-End Development", "System Design"]
 
   return (
     <section id="skills" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-primary/5">

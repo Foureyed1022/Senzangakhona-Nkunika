@@ -4,11 +4,12 @@ export function WorkSection() {
   const projects = [
     {
       name: "Miss Malawi",
-      role: "Web Designer",
+      role: "Web Designer & Developer",
       description:
         "Designed clean and engaging digital visuals for Miss Malawi, contributing to the brand's online presence and audience engagement.",
       skills: ["Web Design", "UI/UX", "Branding"],
       link: "https://www.missmw.org",
+      image: "/images/miss malawi.png",
     },
     {
       name: "Pnachi Furniture",
@@ -17,6 +18,7 @@ export function WorkSection() {
         "Created online visuals and contributed to digital development for Pnachi Furniture, supporting their shift toward a stronger digital brand identity.",
       skills: ["Web Design", "Front-End Development", "Brand Presentation"],
       link: "https://pnachi-furnitures.vercel.app",
+      image: "/images/pnachi.png",
     },
   ]
 
@@ -35,27 +37,39 @@ export function WorkSection() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block p-8 bg-card border border-border rounded-lg hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+              className="group block bg-card border border-border rounded-lg hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 overflow-hidden"
             >
-              <div className="space-y-4">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {project.name}
-                    </h3>
-                    <p className="text-accent font-semibold mt-1">{project.role}</p>
-                  </div>
-                  <ExternalLink className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
+              <div className="md:flex">
+                <div className="md:w-1/3">
+                  <img
+                    src={project.image}
+                    alt={`${project.name} project showcase`}
+                    className="w-full h-48 md:h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
+                <div className="p-8 md:w-2/3">
+                  <div className="space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                          {project.name}
+                        </h3>
+                        <p className="text-accent font-semibold mt-1">{project.role}</p>
+                      </div>
+                      <ExternalLink className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
 
-                <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {project.skills.map((skill) => (
-                    <span key={skill} className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">
-                      {skill}
-                    </span>
-                  ))}
+                    <div className="flex flex-wrap gap-2 pt-2">
+                      {project.skills.map((skill) => (
+                        <span key={skill} className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </a>

@@ -1,4 +1,4 @@
-import { ElevatorPitchSection } from "@/components/elevator-pitch-section"
+// import { ElevatorPitchSection } from "@/components/elevator-pitch-section"
 import { Header } from "@/components/header"
 
 export const metadata = {
@@ -11,7 +11,12 @@ export default function ElevatorPitchPage() {
     <main className="min-h-screen">
       <Header />
       <div className="pt-20">
-        <ElevatorPitchSection />
+        {/* ElevatorPitchSection has been commented out */}
+        {/* <ElevatorPitchSection /> */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">Elevator Pitch</h1>
+          <p className="text-xl text-muted-foreground">This section has been temporarily disabled.</p>
+        </div>
       </div>
     </main>
   )

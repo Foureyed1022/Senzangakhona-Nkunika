@@ -4,7 +4,7 @@ import { SkillsSection } from "@/components/skills-section"
 import { WorkSection } from "@/components/work-section"
 import { ContactSection } from "@/components/contact-section"
 import { Header } from "@/components/header"
-import { PortfolioProjectsSection } from "@/components/portfolio-projects-section"
+// import { PortfolioProjectsSection } from "@/components/portfolio-projects-section"
 
 export const metadata = {
   title: "Senzangakhona - Software Engineer & Web Designer",
@@ -20,7 +20,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <WorkSection />
-      <PortfolioProjectsSection />
+      {/* <PortfolioProjectsSection /> */}
       <ContactSection />
     </main>
   )
